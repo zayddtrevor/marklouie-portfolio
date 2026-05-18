@@ -21,7 +21,7 @@ export default function AboutPage() {
           </p>
         </MotionItem>
         <MotionItem>
-          <div className="mt-10 rounded-2xl border border-white/10 bg-white/[0.04] p-6 leading-7 text-zinc-400">
+          <div className="glass-card mt-10 rounded-2xl p-6 leading-7 text-zinc-400">
             I like building practical systems, improving user workflows, and
             learning how real applications are planned, tested, deployed, and
             maintained.

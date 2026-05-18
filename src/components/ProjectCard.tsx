@@ -1,3 +1,6 @@
+"use client";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 import type { Project } from "@/data/projects";
 
@@ -7,7 +10,11 @@ type ProjectCardProps = {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/[0.04] transition hover:-translate-y-1 hover:border-teal-300/50 hover:bg-white/[0.07]">
+    <motion.article
+      className="glass-card group flex h-full flex-col overflow-hidden rounded-2xl transition hover:border-teal-300/45"
+      transition={{ duration: 0.18, ease: "easeOut" }}
+      whileHover={{ scale: 1.015, y: -4 }}
+    >
       <div className="relative aspect-[16/10] overflow-hidden bg-zinc-900">
         <Image
           alt={`${project.title} project preview`}
@@ -57,6 +64,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
           </a>
         </div>
       </div>
-    </article>
+    </motion.article>
   );
 }

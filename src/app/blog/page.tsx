@@ -23,7 +23,7 @@ export default function BlogPage() {
         <div className="mt-12 grid gap-5">
           {posts.map((post) => (
             <MotionItem
-              className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition hover:border-rose-300/40 hover:bg-white/[0.07] md:p-8"
+              className="glass-card rounded-2xl p-6 transition hover:-translate-y-1 hover:border-rose-300/40 md:p-8"
               key={post.slug}
             >
               <Link href={`/blog/${post.slug}`}>

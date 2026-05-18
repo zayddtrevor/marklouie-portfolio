@@ -13,7 +13,7 @@ export function MotionGroup({ children, ...props }: MotionProps) {
       whileInView="show"
       variants={{
         hidden: {},
-        show: { transition: { staggerChildren: 0.09 } },
+        show: { transition: { staggerChildren: 0.08 } },
       }}
       {...props}
     >
@@ -26,8 +26,12 @@ export function MotionItem({ children, ...props }: MotionProps) {
   return (
     <motion.div
       variants={{
-        hidden: { opacity: 0, y: 22 },
-        show: { opacity: 1, y: 0, transition: { duration: 0.55, ease: "easeOut" } },
+        hidden: { opacity: 0, y: 18 },
+        show: {
+          opacity: 1,
+          y: 0,
+          transition: { duration: 0.45, ease: "easeOut" },
+        },
       }}
       {...props}
     >

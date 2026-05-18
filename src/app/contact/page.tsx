@@ -36,7 +36,7 @@ export default function ContactPage() {
         <div className="mt-12 grid gap-4 md:grid-cols-3">
           {contacts.map((contact) => (
             <MotionItem
-              className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 transition hover:-translate-y-1 hover:border-teal-300/50 hover:bg-white/[0.07]"
+              className="glass-card rounded-2xl p-6 transition hover:-translate-y-1 hover:border-teal-300/50"
               key={contact.label}
             >
               <p className="text-sm text-zinc-500">{contact.label}</p>
