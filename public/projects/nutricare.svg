@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title">
+  <title id="title">NutriCare dashboard preview</title>
+  <rect width="1200" height="750" fill="#071013"/>
+  <rect x="70" y="68" width="1060" height="614" rx="32" fill="#0f172a"/>
+  <rect x="118" y="120" width="272" height="174" rx="20" fill="#134e4a"/>
+  <rect x="430" y="120" width="272" height="174" rx="20" fill="#14532d"/>
+  <rect x="742" y="120" width="272" height="174" rx="20" fill="#164e63"/>
+  <rect x="118" y="348" width="476" height="250" rx="24" fill="#111827"/>
+  <rect x="638" y="348" width="376" height="250" rx="24" fill="#111827"/>
+  <path d="M160 535c58-120 118-130 180-42 58 84 113 69 208-87" fill="none" stroke="#5eead4" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="808" cy="473" r="82" fill="none" stroke="#22c55e" stroke-width="22"/>
+  <circle cx="808" cy="473" r="82" fill="none" stroke="#f43f5e" stroke-width="22" stroke-dasharray="145 370" stroke-linecap="round"/>
+  <g fill="#e5e7eb">
+    <rect x="150" y="158" width="158" height="18" rx="9"/>
+    <rect x="462" y="158" width="142" height="18" rx="9"/>
+    <rect x="774" y="158" width="130" height="18" rx="9"/>
+  </g>
+</svg>
