@@ -54,14 +54,20 @@ export function ProjectCard({ project }: ProjectCardProps) {
           >
             GitHub
           </a>
-          <a
-            className="button-primary min-h-11 px-4 py-2 text-sm"
-            href={project.liveUrl}
-            rel={project.liveUrl.startsWith("http") ? "noreferrer" : undefined}
-            target={project.liveUrl.startsWith("http") ? "_blank" : undefined}
-          >
-            Live demo
-          </a>
+          {project.liveUrl ? (
+            <a
+              className="button-primary min-h-11 px-4 py-2 text-sm"
+              href={project.liveUrl}
+              rel="noreferrer"
+              target="_blank"
+            >
+              Live demo
+            </a>
+          ) : (
+            <span className="inline-flex min-h-11 items-center justify-center rounded-full border border-white/10 px-4 py-2 text-sm font-semibold text-zinc-500">
+              Demo soon
+            </span>
+          )}
         </div>
       </div>
     </motion.article>

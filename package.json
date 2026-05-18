@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "push": "powershell -ExecutionPolicy Bypass -File scripts/push-changes.ps1"
   },
   "dependencies": {
     "framer-motion": "^12.38.0",

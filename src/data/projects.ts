@@ -7,11 +7,9 @@ export type Project = {
   description: string;
   stack: string[];
   githubUrl: string;
-  liveUrl: string;
+  liveUrl?: string;
   featured: boolean;
 };
-
-const githubProfile = "https://github.com/zayddtrevor";
 
 export const projects: Project[] = [
   {
@@ -23,8 +21,8 @@ export const projects: Project[] = [
     description:
       "A web-based system for tracking student health records, BMI data, attendance, nutritional status, dashboard summaries, reports, and automated alerts.",
     stack: ["React", "Supabase", "API logic", "Dashboard UI"],
-    githubUrl: githubProfile,
-    liveUrl: "/projects",
+    githubUrl: "https://github.com/zayddtrevor/NutriCare",
+    liveUrl: "https://nutricare-neon.vercel.app",
     featured: true,
   },
   {
@@ -36,8 +34,8 @@ export const projects: Project[] = [
     description:
       "A service desk platform with ticket creation, status tracking, automated ticket IDs, Supabase authentication, role-based access, and analytics.",
     stack: ["React", "Vite", "Supabase", "Vercel"],
-    githubUrl: githubProfile,
-    liveUrl: "/projects",
+    githubUrl: "https://github.com/zayddtrevor/netops-ticketing-system",
+    liveUrl: "https://netops-theta.vercel.app/",
     featured: true,
   },
   {
@@ -49,8 +47,7 @@ export const projects: Project[] = [
     description:
       "A collection of functional and UX testing work covering reproduction steps, severity levels, mobile responsiveness, navigation flows, and UI consistency.",
     stack: ["Manual QA", "Functional testing", "UX testing", "Reports"],
-    githubUrl: githubProfile,
-    liveUrl: "/projects",
+    githubUrl: "https://github.com/zayddtrevor/qa-audit-portfolio",
     featured: true,
   },
   {
@@ -62,8 +59,7 @@ export const projects: Project[] = [
     description:
       "Wireframes, UI concepts, basic design systems, visual assets, and interface improvements shaped around usability and accessibility.",
     stack: ["Figma", "Canva", "UI design", "Accessibility"],
-    githubUrl: githubProfile,
-    liveUrl: "/projects",
+    githubUrl: "https://github.com/zayddtrevor/design-portfolio",
     featured: false,
   },
 ];
